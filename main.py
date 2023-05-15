@@ -46,6 +46,9 @@ def ocr(image_folder, output_docx):
 
         print(text)
 
+        # Delete the processed image file
+        os.remove(processed_image_path)
+
     # Save the Word document
     doc.save(output_docx)
 
